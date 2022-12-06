@@ -22,6 +22,30 @@ body {
   letter-spacing: 0.02em;
 }
 
+p {
+  margin: 0;
+}
+
+h1 {
+  font-size: 56px;
+  font-weight: var(--title-font-weight);
+  line-height: 1.07;
+  margin: 0 0 50px 0;
+}
+
+h2 {
+  margin: 0;
+}
+
+h3 {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -48,17 +72,13 @@ body {
 .logo-and-navigation {
   display: flex;
   align-items: center;
-  flex-direction: row;
   column-gap: 77px;
 }
 
 .navigation {
   display: flex;
-  flex-direction: row;
   column-gap: 40px;
   list-style: none;
-  padding: 0;
-  margin: 0;
 }
 
 .navigation-item {
@@ -88,11 +108,8 @@ header {
 
 header .contacts {
   display: flex;
-  flex-direction: row;
   column-gap: 40px;
   list-style: none;
-  padding: 0;
-  margin: 0;
 }
 
 header .contact-link {
@@ -154,24 +171,14 @@ header .contact-link:hover {
   background-color: var(--active-color);
 }
 
-h1 {
-  font-size: 56px;
-  font-weight: var(--title-font-weight);
-  line-height: 1.07;
-  margin-block: 0 50px;
-}
-
 .features {
   padding-block: 120px;
 }
 
 .features-list {
   display: flex;
-  flex-direction: row;
   column-gap: 24px;
   list-style: none;
-  padding: 0;
-  margin: 0;
 }
 
 .features-title {
@@ -179,13 +186,12 @@ h1 {
   line-height: 1.2;
   font-weight: var(--title-font-weight);
   color: var(--navi-blue-color);
-  margin-block: 0 10px;
+  margin-bottom: 10px;
 }
 
 .features-text {
   font-size: 16px;
   line-height: 1.5;
-  margin: 0;
   color: var(--slate-color);
 }
 
@@ -200,21 +206,19 @@ h1 {
   text-transform: capitalize;
   font-weight: var(--title-font-weight);
   color: var(--navi-blue-color);
-  margin-block: 0 70px;
+  margin-bottom: 70px;
   text-align: center;
 }
 
 .our-services-list {
   display: flex;
-  flex-direction: row;
   column-gap: 24px;
   list-style: none;
-  padding: 0;
-  margin: 0;
 }
 
 .our-services-product {
   width: 100%;
+  display: block;
 }
 
 /* Our team */
@@ -228,17 +232,14 @@ h1 {
   text-transform: capitalize;
   font-weight: var(--title-font-weight);
   color: var(--navi-blue-color);
-  margin-block: 0 70px;
+  margin-bottom: 70px;
   text-align: center;
 }
 
 .our-team-list {
   display: flex;
-  flex-direction: row;
   column-gap: 24px;
   list-style: none;
-  padding: 0;
-  margin: 0;
 }
 
 .our-team-member {
@@ -249,12 +250,17 @@ h1 {
 }
 
 .our-team-photo {
+  display: block;
   width: 100%;
+}
+
+.our-team-text {
+  padding: 32px 10px;
 }
 
 .our-team-name {
   text-align: center;
-  margin-block: 32px 10px;
+  margin-bottom: 10px;
   font-size: 20px;
   line-height: 1.2;
   font-weight: var(--title-font-weight);
@@ -263,7 +269,6 @@ h1 {
 
 .our-team-position {
   text-align: center;
-  margin-block: 0 32px;
   color: var(--slate-color);
   line-height: 1.5;
 }
@@ -281,11 +286,8 @@ h1 {
 
 .filter-buttons-list {
   display: flex;
-  flex-direction: row;
   column-gap: 24px;
   list-style: none;
-  padding: 0;
-  margin: 0;
 }
 
 .filter-buttons-item {
@@ -327,8 +329,6 @@ h1 {
   column-gap: var(--project-cards-column-gap);
   row-gap: 48px;
   list-style: none;
-  padding: 0;
-  margin: 0;
 }
 
 .project-cards-item {
@@ -387,11 +387,15 @@ h1 {
   display: block;
 }
 
+.project-cards-text {
+  padding: 32px 16px;
+}
+
 .project-cards-title {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.2;
-  margin: 32px 16px 8px 16px;
+  margin-bottom: 8px;
   text-align: left;
   color: var(--navi-blue-color);
 }
@@ -400,7 +404,6 @@ h1 {
   font-size: 16px;
   line-height: 1.5;
   color: var(--slate-color);
-  margin: 0 16px 32px 16px;
 }
 
 /* Page footer */
@@ -408,6 +411,10 @@ h1 {
 footer {
   padding-block: 100px;
   background-color: #2f303a;
+}
+
+footer .logo {
+  margin-bottom: 16px;
 }
 
 footer .logo a {
@@ -419,6 +426,5 @@ footer .footer-text {
   width: 100%;
   font-size: 16px;
   line-height: 1.5;
-  margin-block: 16px 0;
   color: var(--cornflower-color);
 }
